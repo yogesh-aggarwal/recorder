@@ -93,7 +93,7 @@ class _RecorderState extends State<Recorder> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Detox",
+          "Recorder",
           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                 fontSize: 19,
                 fontWeight: FontWeight.w500,
