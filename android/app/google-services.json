@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "36288254308",
+    "project_id": "recorder-app-48c81",
+    "storage_bucket": "recorder-app-48c81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36288254308:android:4acb2a4fbec862d547aa71",
+        "android_client_info": {
+          "package_name": "in.yogeshaggarwal.recorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36288254308-9he69fluhcfhu4i5s89u2dprb4uj9vml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.yogeshaggarwal.recorder",
+            "certificate_hash": "f3988988c56e17e2188d14d45ea08bad9971c493"
+          }
+        },
+        {
+          "client_id": "36288254308-ocdubf16j5qd3j28eba0vo6fhu6rk994.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.yogeshaggarwal.recorder",
+            "certificate_hash": "724168e9a6aa11bd11907a0cf75184d535be17e3"
+          }
+        },
+        {
+          "client_id": "36288254308-a9lekdpt4pjfcppb1qo3nevdeuffl7dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoMXi9ngMPEFQ_z5i1K6X_oWz3PngOFMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36288254308-387699dlmip2fb59o04datq32tu098jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
