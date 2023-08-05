@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           const Text(
-            "Detox",
+            "Recorder",
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
