@@ -1,3 +1,4 @@
+import 'package:flutter_background/flutter_background.dart';
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ import 'package:recorder/widgets/screens/auth/login.dart';
 import 'package:recorder/widgets/screens/home/home.dart';
 import 'package:recorder/widgets/screens/recordings/recordings.dart';
 import 'package:recorder/widgets/screens/settings/settings.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -77,6 +79,28 @@ class _RecorderState extends State<Recorder> {
         });
       }
     });
+
+    initBackgoundService();
+  }
+
+  initBackgoundService() async {
+    final androidConfig = FlutterBackgroundAndroidConfig(
+      notificationTitle: "Recorder is running in the background",
+      notificationText:
+          "Recorder is running in the background and recording your camera and microphone.",
+      notificationImportance: AndroidNotificationImportance.Default,
+      notificationIcon: AndroidResource(
+          name: 'background_icon',
+          defType: 'drawable'), // Default is ic_launcher from folder mipmap
+    );
+    bool success =
+        await FlutterBackground.initialize(androidConfig: androidConfig);
+
+    if (success) {
+      print("Background service started successfully");
+    } else {
+      print("Failed to start background service");
+    }
   }
 
   @override

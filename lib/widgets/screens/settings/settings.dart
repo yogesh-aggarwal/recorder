@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import 'package:recorder/core/auth.dart';
 import 'package:recorder/core/firebase.dart';
@@ -63,6 +64,13 @@ class SettingsScreen extends StatelessWidget {
           ),
         ),
         SizedBox(height: 32),
+        ListTile(
+          leading: Icon(Icons.person),
+          title: Text('Manage permissions'),
+          onTap: () async {
+            openAppSettings();
+          },
+        ),
         ListTile(
           leading: Icon(Icons.person),
           title: Text('Switch accounts'),
